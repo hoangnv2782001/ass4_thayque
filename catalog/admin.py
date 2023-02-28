@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-from models import Product, Category
-from forms import ProductAdminForm
+from catalog.models import Product,Category
+from catalog.forms import ProductAdminForm
 
 class ProductAdmin(admin.ModelAdmin):
     form = ProductAdminForm

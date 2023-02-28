@@ -22,7 +22,7 @@ class Category(models.Model):
     def __unicode__(self):
         return self.name
 
-    @models.permalink
+    # @models.permalink
     def get_absolute_url(self):
         return ('catalog_category', (), {'category_slug': self.slug})
 
@@ -57,7 +57,7 @@ class Product(models.Model):
     def __unicode__(self):
         return self.name
 
-    @models.permalink
+    # @models.permalink
     def get_absolute_url(self):
         return ('catalog_product', (), {'product_slug': self.slug})
 

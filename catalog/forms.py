@@ -1,10 +1,11 @@
 from django import forms
-from models import Product
+from catalog.models import Product,Category
 
 
 class ProductAdminForm(forms.ModelForm):
     class Meta:
         model = Product
+        fields = '__all__'
 
     def clean_price(self):
         if self.cleaned_data['price'] <= 0:

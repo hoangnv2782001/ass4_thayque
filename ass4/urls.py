@@ -21,8 +21,8 @@ from django.urls import include
 admin.autodiscover()
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+
     path(r'catalog/',views.home ),
-    path(r'^admin/', admin.site.urls),
+    path(r'admin/', admin.site.urls),
 
 ]
